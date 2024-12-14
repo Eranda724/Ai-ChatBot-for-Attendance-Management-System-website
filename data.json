@@ -1,0 +1,259 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Is anyone there?",
+                "Good morning",
+                "Good afternoon"
+            ],
+            "responses": [
+                "Hello! How can I assist you with the attendance system?",
+                "Hi there! What would you like to know about the system?",
+                "Hey! Need help with your courses or attendance?",
+                "Hi! How can I assist today?",
+                "Good to see you! How can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "I'm leaving"
+            ],
+            "responses": [
+                "Goodbye! Feel free to return if you have more questions.",
+                "Take care! Let me know if you need more help.",
+                "See you! Reach out if you have more questions.",
+                "Farewell! I'm here whenever you need."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks",
+                "Much appreciated",
+                "That's helpful"
+            ],
+            "responses": [
+                "You're welcome! Glad I could help.",
+                "Any time!",
+                "Happy to assist!",
+                "You're welcome. Let me know if there’s more."
+            ]
+        },
+        {
+            "tag": "attendance_status",
+            "patterns": [
+                "What is my attendance?",
+                "Can I check my attendance?",
+                "How can I see my attendance?",
+                "Show me my attendance percentage"
+            ],
+            "responses": [
+                "Check your attendance on the dashboard under 'Attendance'.",
+                "Your attendance details are in the 'Attendance' tab.",
+                "Visit your 'Attendance' section to view details.",
+                "Login and check the 'Attendance' page for updates."
+            ]
+        },
+        {
+            "tag": "attendance_update",
+            "patterns": [
+                "Can I update my attendance?",
+                "How can I modify attendance records?",
+                "Is there a way to change attendance details?"
+            ],
+            "responses": [
+                "Attendance updates are restricted. Please contact admin.",
+                "Only authorized staff can make changes. Contact your lecturer.",
+                "Changes to attendance require admin access. Reach out to your lecturer."
+            ]
+        },
+        {
+            "tag": "course_info",
+            "patterns": [
+                "Tell me about the courses",
+                "What subjects am I enrolled in?",
+                "How can I see my courses?",
+                "Show me my subject list"
+            ],
+            "responses": [
+                "Your enrolled courses are in the 'Subjects' section.",
+                "Visit the 'Subjects' tab to see your courses.",
+                "Your subject list is available on the 'Subjects' page."
+            ]
+        },
+        {
+            "tag": "lecture_info",
+            "patterns": [
+                "Who is my lecturer?",
+                "Who is teaching this subject?",
+                "Show me my lecturer details",
+                "What lectures do I have?"
+            ],
+            "responses": [
+                "Find lecturer details in the 'Lectures' section.",
+                "The 'Lectures' page has information on your instructors.",
+                "Check the 'Lectures' tab for your teaching staff."
+            ]
+        },
+        {
+            "tag": "lecture_schedule",
+            "patterns": [
+                "When is my next lecture?",
+                "What is my lecture schedule?",
+                "Show me the class schedule",
+                "Do I have a lecture today?"
+            ],
+            "responses": [
+                "Your lecture schedule is on the 'Lectures' page.",
+                "The 'Lectures' tab shows your upcoming classes.",
+                "You can find your schedule under 'Lectures'."
+            ]
+        },
+        {
+            "tag": "enrollment_status",
+            "patterns": [
+                "Am I enrolled in this subject?",
+                "How do I know if I am enrolled?",
+                "Check my enrollment status"
+            ],
+            "responses": [
+                "Your enrollment status is under 'Enrollment'.",
+                "Check the 'Enrollment' page for course registrations.",
+                "Confirm your enrollment status on the 'Enrollment' tab."
+            ]
+        },
+        {
+            "tag": "attendance_policy",
+            "patterns": [
+                "What is the attendance policy?",
+                "How many absences are allowed?",
+                "What happens if I miss too many classes?",
+                "Tell me about the attendance rules"
+            ],
+            "responses": [
+                "Minimum attendance is 75%. More details are on the website.",
+                "Attendance policy requires 75%. Review online for full details.",
+                "Missing over 75% may affect exams. See policy for more."
+            ]
+        },
+        {
+            "tag": "reset_password",
+            "patterns": [
+                "I forgot my password",
+                "How can I reset my password?",
+                "Help me recover my password"
+            ],
+            "responses": [
+                "Reset it via 'Forgot Password' on the login page.",
+                "Click 'Forgot Password' and follow the email instructions.",
+                "Password recovery is available on the login page."
+            ]
+        },
+        {
+            "tag": "user_roles",
+            "patterns": [
+                "What is my role in the system?",
+                "Am I a student or lecturer?",
+                "How can I see my user role?"
+            ],
+            "responses": [
+                "Check 'Profile Settings' to view your user role.",
+                "Roles are in 'Profile Settings' based on registration.",
+                "Your role as student, lecturer, or admin is in your profile."
+            ]
+        },
+        {
+            "tag": "contact_support",
+            "patterns": [
+                "How can I contact support?",
+                "I need help",
+                "Is there a support team I can reach?",
+                "Can I talk to someone for help?"
+            ],
+            "responses": [
+                "Reach support via 'Contact Us' or email on the website.",
+                "Our support team can be contacted through 'Contact Us'.",
+                "For help, visit 'Contact Us' or email support directly."
+            ]
+        },
+        {
+            "tag": "website_navigation",
+            "patterns": [
+                "How do I navigate the website?",
+                "Where can I find my dashboard?",
+                "Help me navigate the site",
+                "Where is the attendance section?"
+            ],
+            "responses": [
+                "Your dashboard and main sections are in the top menu.",
+                "Navigate to 'Attendance', 'Subjects', and more from the menu.",
+                "Dashboard and sections are accessible in the main menu."
+            ]
+        },
+        {
+            "tag": "update_profile",
+            "patterns": [
+                "How can I update my profile?",
+                "I need to change my personal details",
+                "Where can I edit my information?"
+            ],
+            "responses": [
+                "Update profile in 'Account Settings'.",
+                "You can modify details in 'Account Settings'.",
+                "Go to 'Settings' to update personal info."
+            ]
+        },
+        {
+            "tag": "leave_application",
+            "patterns": [
+                "How do I apply for leave?",
+                "Can I submit a leave request?",
+                "How can I request leave?",
+                "What is the process for applying for leave?"
+            ],
+            "responses": [
+                "Apply for leave in the 'Leave Application' section.",
+                "Fill out the 'Leave Application' on your dashboard.",
+                "Submit leave requests via 'Leave Application'."
+            ]
+        },
+        {
+            "tag": "system_info",
+            "patterns": [
+                "What is this system?",
+                "Can you tell me about the attendance system?",
+                "What is the purpose of this website?"
+            ],
+            "responses": [
+                "This is a system for managing student attendance.",
+                "Track attendance, view course info, and manage profiles here.",
+                "The system supports attendance tracking and course management."
+            ]
+        },
+        {
+            "tag": "sample_questions",
+            "patterns": [
+                "What can I ask you?",
+                "What are the questions you can answer?",
+                "What can this chatbot help with?",
+                "Show me some example questions",
+                "What topics can I ask about?"
+            ],
+            "responses": [
+                "Try questions like: 'What is my attendance?' or 'When is my next lecture?'",
+                "You can ask about attendance, lectures, courses, and more.",
+                "Common topics include attendance, schedules, courses, and support."
+            ]
+        }
+    ],
+    "unknown_response": "I can't understand what you say"
+}
