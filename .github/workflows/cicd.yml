@@ -85,3 +85,6 @@ jobs:
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
+
+env:
+  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
