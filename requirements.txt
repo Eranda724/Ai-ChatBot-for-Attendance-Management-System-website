@@ -1,6 +1,6 @@
 Flask
 pytest
-torch
+torch>=2.2.0
 nltk
 numpy
 tqdm

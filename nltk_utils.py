@@ -2,7 +2,10 @@ import nltk
 import numpy as np
 from nltk.tokenize import word_tokenize
 
-nltk.download('punkt')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
