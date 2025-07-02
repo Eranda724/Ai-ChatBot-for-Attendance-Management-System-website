@@ -1,13 +1,22 @@
 import nltk
 import numpy as np
+from nltk.tokenize import word_tokenize
 
-#nltk.download('punkt')
+nltk.download('punkt')
 
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
 def tokenize(sentence):
-    return nltk.word_tokenize(sentence)
+    """
+    Split sentence into array of words/tokens
+    A token can be a word or punctuation character, or number
+    """
+    try:
+        return word_tokenize(sentence)
+    except LookupError:
+        # Fallback to basic splitting if NLTK data is not available
+        return sentence.split()
 
 def stem(word):
     return stemmer.stem(word.lower())
