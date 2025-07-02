@@ -1,5 +1,6 @@
 import pytest
 from app import app
+from unittest.mock import patch
 
 @pytest.fixture
 def client():
@@ -12,9 +13,14 @@ def test_home_page(client):
     rv = client.get('/')
     assert rv.status_code == 200
 
-def test_chat_endpoint(client):
+@patch('app.get_response')
+def test_chat_endpoint(mock_get_response, client):
     """Test the chat endpoint"""
+    # Configure the mock to return a predefined response
+    mock_get_response.return_value = "Hello! How can I assist you?"
+    
     response = client.post('/chat', 
                          json={'message': 'Hello'})
     assert response.status_code == 200
-    assert 'response' in response.get_json() 
+    assert 'response' in response.get_json()
+    assert response.get_json()['response'] == "Hello! How can I assist you?" 
