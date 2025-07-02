@@ -1,0 +1,6 @@
+Flask
+pytest
+torch
+nltk
+numpy
+tqdm
